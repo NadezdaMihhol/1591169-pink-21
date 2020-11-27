@@ -18,22 +18,22 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a>
                 Главная
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a>
                 Фотографии
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="">
                 Конкурс
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="">
                 HTML Academy
                 </a>
@@ -42,13 +42,15 @@
           </div>
         </nav>
       </div>
+    </header>
+    <main>
       <section class="header-block">
         <div class="header-block__wrapper">
           <div class="header-block__slogan">
             <h2 class="header-block__title">Взгляните на жизнь иначе!</h2>
           </div>
           <button class="header-block__button">Скачать приложение</button>
-          <div class="header-block__app-list">
+          <div class="header-block__app">
             <a class="app-link"></a>
             <a class="app-link"></a>
             <a class="app-link"></a>
@@ -56,8 +58,6 @@
           <p class="header-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-    </header>
-    <main>
       <section class="advantages">
         <h1 class="visually-hidden">Информация о приложении</h1>
         <div class="advantages__wrapper">
@@ -84,13 +84,15 @@
       </section>
       <section class="reviews">
         <h1 class="visually-hidden">Отзывы</h1>
-        <blockquote class="reviews__item">
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__author-name--age">25 лет, водитель трамвая</p>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="rewiews__wrapper slider">
+          <div class="reviews__item">
+            <div class="reviews__author-info">
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__author-name--age">25 лет, водитель трамвая</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
           </div>
-        </blockquote>
+        </div>
         <div class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
           <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
@@ -99,33 +101,35 @@
       </section>
       <section class="table">
         <h1 class="visually-hidden">Таблица вариантов</h1>
-        <table class="table--mobile">
-          <tr>
-            <th>База</th>
-            <th>Стандарт</th>
-            <th>Анлим</th>
-          </tr>
-          <tr>
-            <td>1,99 USD</td>
-            <td>3,99 USD</td>
-            <td>9,99 USD</td>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td>Розовый фильтр</td>
-            <td>Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td>Смайлики</td>
-            <td>Смайлики</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td>Комментарии</td>
-            <td>Комментарии</td>
-          </tr>
-        </table>
+        <div class="table__wrapper slider">
+          <table class="table--mobile">
+            <tr>
+              <th>База</th>
+              <th>Стандарт</th>
+              <th>Анлим</th>
+            </tr>
+            <tr>
+              <td>1,99 USD</td>
+              <td>3,99 USD</td>
+              <td>9,99 USD</td>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td>Розовый фильтр</td>
+              <td>Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td>Смайлики</td>
+              <td>Смайлики</td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td>Комментарии</td>
+              <td>Комментарии</td>
+            </tr>
+          </table>
+        </div>
         <div class="advantages__toggles slider__toggles">
           <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
           <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
