@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+<meta charset="utf-8">
+<title>HTML Academy: Пинк</title>
 </head>
 <body class="catalog-body">
   <header class="main-header">
     <div class="page-header">
       <div class="page-header__bar">
-        <a class="page-header__logo" href="index.html">Pink
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__image page-header__logo--image" src="https://via.placeholder.com/150x150" width="74" height="23" alt="Логотип Пинк">
         </a>
       </div>
@@ -55,7 +55,7 @@
       <div class="container-catalog">
         <div class="catalog__main">
           <h4 class="catalog__main-title">Взгляните на фотографии, которые выкладывают пользователи!</h4>
-          <div class="card">
+          <div class="card__banner">
             <div class="card__badge">Панорама дня</div>
             <div class="card__img">
               <img src="https://via.placeholder.com/150x150" width="320" height="137" alt="Панорама дня">
@@ -137,11 +137,29 @@
         </div>
       </div>
     </section>
-    <section>
-      <h4 class="catalog__main-title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h4>
-      <img src="https://via.placeholder.com/150x150" width="280" height="374" alt="Заснеженная дорога">
-      <button type="button">Запостить</button>
-      <button type="button">Отмена</button>
+    <section class="photo__upload">
+      <h4 class="photo__upload-title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h4>
+      <div class="photo__upload-file">
+        <img src="https://via.placeholder.com/150x150" width="280" height="374" alt="Заснеженная дорога">
+      </div>
+      <div class="upload__block-wrapper">
+        <div class="upload__tools">
+          <div class="tools__item tools__item--active"></div>
+          <svg class="tools__icon" width="44" height="44"></svg>
+        </div>
+        <div class="upload__tools">
+          <div class="tools__item tools__item--active"></div>
+          <svg class="tools__icon" width="48" height="43"></svg>
+        </div>
+        <div class="upload__tools">
+          <div class="tools__item tools__item--active"></div>
+          <svg class="tools__icon" width="32" height="32"></svg>
+        </div>
+        <div class="upload__btn-wrapper">
+          <button class="upload__submit" type="button">Запостить</button>
+          <button  class="upload__reset" type="reset">Отмена</button>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
