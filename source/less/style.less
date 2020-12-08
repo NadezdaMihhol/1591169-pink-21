@@ -1,96 +1,17 @@
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/opensans-regular.woff2") format("woff2"), url("fonts/opensans-regular.woff") format("woff");
-}
+// global
+@import "./global/global.less";
 
-@font-face {
-  font-family: "Open Sans";
-  font-weight: light;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/opensans-light.woff2") format("woff2"), url("fonts/opensans-light.woff") format("woff");
-}
+// fonts
+@import "./fonts/fonts.less";
 
-@font-face {
-  font-family: "Open Sans";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/opensans-bold.woff2") format("woff2"), url("fonts/opensans-bold.woff") format("woff");
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@base-color: #283645;
-@font-family: Open Sans;
-
-body {
-  width: 320px;
-  margin: 0;
-  font-family: @font-family, "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  text-align: center;
-  color: @base-color;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-.main-header {
-  width: 100%;
-  @color-white: #FFFFFF;
-
-  &a {
-    text-decoration: none;
-    color: @color-white;
-  }
-}
-
-.page-header {
-  height: 66px;
-  background-color: #000000;
-}
+// block
+@import "./block/page-body.less";
+@import "./block/main-header.less";
+@import "./block/header-block.less";
+@import "./block//advantages.less";
+@import "./block//reviews.less";
+@import "./block//table.less";
+@import "./block//contacts.less";
+@import "./block//page-footer.less";
+@import "./block//page-footer__copyright.less";
+@import "./block//page-footer__bar.less";
