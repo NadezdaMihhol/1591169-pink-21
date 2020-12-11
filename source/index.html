@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
       <div class="page-header">
         <div class="page-header__bar">
-          <a class="page-header__logo" href="index.html">Pink
-          <img class="page-header__image page-header__logo--image" src="https://via.placeholder.com/150x150" width="74" height="23" alt="Логотип Пинк">
+          <a class="page-header__logo" href="index.html">
+          <img class="page-header__image page-header__logo--image" src="img/pink.png" width="74" height="23" alt="Логотип Пинк">
           </a>
         </div>
         <nav class="main-nav">
@@ -49,34 +50,47 @@
           <div class="header-block__slogan">
             <h2 class="header-block__title">Взгляните на жизнь иначе!</h2>
           </div>
-          <button class="header-block__button">Скачать приложение</button>
-          <div class="header-block__app">
-            <a class="app-link"></a>
-            <a class="app-link"></a>
-            <a class="app-link"></a>
+          <div class="hand-img"></div>
+          <div class="header-block__application">
+            <button class="header-block__button">Скачать приложение</button>
+            <div class="header-block__app">
+              <a class="app-link">
+                <img class="app-icon--aple" src="img/apple-logo.svg" role="presentation" width="47" height="56"></img>
+              </a>
+              <a class="app-link">
+                <img class="app-icon--android" src="img/android-logo.svg" role="presentation" width="43" height="57"></img>
+              </a>
+              <a class="app-link">
+                <img class="app-icon--ms" src="img/microsoft-logo.svg" role="presentation" width="44" height="41"></img>
+              </a>
+            </div>
+            <p class="header-block__text">Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</p>
           </div>
-          <p class="header-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="advantages">
         <h1 class="visually-hidden">Информация о приложении</h1>
         <div class="advantages__wrapper">
-          <p class="advantages__slogan">Устали от серости мегаполиса? </p>
-          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
-          <div class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <div class="advantages__slogan">
+            <p class="advantages__text">Устали от серости мегаполиса? </p>
+            <p class="advantages__text">Нам есть, что вам предложить!</p>
           </div>
-          <div class="advantages__item">
-            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="advantages__item">
-            <h3 class="advantages__item-title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <div class="advantages__item-wrapper">
+            <div class="advantages__item">
+              <h3 class="advantages__item-title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="advantages__item">
+              <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="advantages__item item__friends">
+              <h3 class="advantages__item-title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
           <div class="advantages__item--research">
-            <h3 class="advantages__item-title">Эффект на 24 часа!</h3>
+            <h3 class="advantages__item-title--24h">Эффект на 24 часа!</h3>
             <p class="advantages__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="">Узнать больше об исследовании</a>
           </div>
@@ -104,33 +118,41 @@
         <div class="table__wrapper slider">
           <table class="table--mobile">
             <tr>
-              <th>База</th>
-              <th>Стандарт</th>
-              <th>Анлим</th>
+              <th class="table-row__empty--cell"></th>
+              <th>
+                <p class="table-row__title">База</p>
+                <p class="table-row__price">1,99 USD</p>
+              </th>
+              <th class="table__col active__col">
+                <p class="table-row__title">Стандарт</p>
+                <p class="table-row__price">3,99 USD</p>
+              </th>
+              <th>
+                <p class="table-row__title">Анлим</p>
+                <p class="table-row__price">9,99 USD</p>
+              </th>
             </tr>
-            <tr>
-              <td>1,99 USD</td>
-              <td>3,99 USD</td>
-              <td>9,99 USD</td>
+            <tr  class="table-row__info">
+              <td class="table-row__text">Розовый фильтр</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>Розовый фильтр</td>
-              <td>Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-              <td>Смайлики</td>
-              <td>Смайлики</td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td>Комментарии</td>
-              <td>Комментарии</td>
-            </tr>
+              <tr class="table-row__info">
+                <td class="table-row__text">Смайлики</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="table-row__info">
+                <td class="table-row__text">Комментарии</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
           </table>
         </div>
-        <div class="advantages__toggles slider__toggles">
+        <div class="table__toggles slider__toggles">
           <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
           <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
           <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
@@ -142,7 +164,7 @@
           <div class="contacts__details">
             <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
             <ul class="contacts__list feedback__list">
-              <li class="contacts__list feedback__item">Звоните:
+              <li class="feedback__item">Звоните:
                 <a href="tel:+78125556666" rel="">+7 (812) 555-66-66</a>
               </li>
               <li class="feedback__item">Пишите:
@@ -150,11 +172,12 @@
               </li>
               <li class="feedback__item">
                 Приезжайте в гости:
-                <p>ул. Большая Конюшенная, 19/8</p>
+                <p>ул. Большая <br>Конюшенная, 19/8</p>
               </li>
             </ul>
             <a class="google-map" href="googlemap.html">
-              <img class="feedback-map" src="https://via.placeholder.com/150x150" width="320" height="200" alt="Адрес офиса на карте">
+              <img class="feedback-map" src="img/map.png" width="320" height="200" alt="Адрес офиса на карте">
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716648157!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1603893562725!5m2!1sru!2see" width="320" height="200" allowfullscreen title="Адрес офиса на карте ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe> -->
             </a>
           </div>
         </div>
@@ -162,8 +185,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__bar">
-        <a class="page-footer__logo" href="index.html">Pink
-        <img class="page-footer__logo page-footer__logo--image" src="https://via.placeholder.com/150x150" width="145" height="40" alt="Логотип Пинк">
+        <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo page-footer__logo--image" src="img/logotype-blue-tablet.png" width="145" height="40" alt="Логотип Пинк">
         </a>
       </div>
       <div class="page-footer__social">

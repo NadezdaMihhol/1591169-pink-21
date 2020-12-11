@@ -1,0 +1,77 @@
+.advantages__slogan {
+  margin-top: 40px;
+}
+
+.advantages__text {
+  padding: 0 0 30px;
+  font-family: @font-family, "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: @base-color;
+}
+
+.advantages__item-wrapper {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 828px;
+  background-color: #f2f2f2;
+}
+
+.advantages__item-title {
+  font-family: @font-family, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.advantages__item {
+  padding-bottom: 26px;
+}
+
+.advantages__item:last-child {
+  padding-bottom: 0;
+}
+
+.advantages__description {
+  width: 280px;
+  padding-top: 15px;
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: @base-color;
+  text-align: center;
+}
+
+.item__friends {
+  position: relative;
+}
+
+.item__friends::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/iphone-hy.svg");
+  background-repeat: no-repeat;
+  top: 220px;
+  left: 60px;
+  width: 157px;
+  height: 320px;
+}
+
+.advantages__item--research {
+  display: none;
+  background-image: url("../img/timer24.svg");
+  background-repeat: no-repeat;
+
+  h3 {
+    color: #000000;
+  }
+
+  a {
+    color: @active;
+    text-decoration: underline;
+  }
+}
