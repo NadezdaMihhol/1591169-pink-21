@@ -3,6 +3,9 @@
   height: 364px;
   background-color: #ffffff;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+  }
 }
 
 .reviews__author-name {
@@ -14,6 +17,15 @@
   line-height: 30px;
   color: #000000;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+  }
+}
+
+.reviews__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .reviews__author-name--age {
@@ -21,6 +33,11 @@
   font-family: @font-family, "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 2;
+  }
 }
 
 .reviews__text {
@@ -30,4 +47,9 @@
   line-height: 30px;
   color: @base-color;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    order: 1;
+  }
 }

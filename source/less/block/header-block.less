@@ -5,32 +5,64 @@
   background: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   // background-position:;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    background: url("../img/back-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .hand-img {
   height: 286px;
   background: url("../img/hand-iphone.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/hand.png");
+    background-repeat: no-repeat;
+    height: 497px;
+  }
 }
 
 .header-block__application {
   background-color: #1d2631;
   height: 271px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    background-color: transparent;
+    top: -380px;
+    left: 20px;
+    text-align: left;
+    z-index: 2;
+  }
 }
 
 .header-block__slogan {
   width: 280px;
   padding-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 55px;
+    text-align: center;
+  }
 }
 
 .header-block__title {
   width: 280px;
   padding-top: 19px;
   font-family: @font-family, "Arial", sans-serif;
-  font-weight: 300;
   font-size: 24px;
+  font-weight: 300;
   line-height: 29px;
   color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 102px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .header-block__button {
@@ -46,6 +78,12 @@
   font-weight: bold;
   line-height: 18px;
   color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
 }
 
 .header-block__wrapper {
@@ -55,12 +93,20 @@
   line-height: 39px;
   color: @white-color;
 
+  @media (min-width: @tablet-width) {
+  }
+
   p {
     margin-top: 12px;
     font-family: @font-family, "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
+      font-size: 18px;
+    }
   }
 }
 

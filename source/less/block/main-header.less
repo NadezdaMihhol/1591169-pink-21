@@ -10,10 +10,35 @@
   color: @base-color;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 110px;
+    background: url("../img/back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
 .page-header__bar {
   padding: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    margin-top: 27px;
+  }
+
+  .page-header__image {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    background-image: url("../img/logotype-white-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-nav__wrapper {
