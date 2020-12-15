@@ -4,60 +4,93 @@
   border-collapse: collapse;
   background-color: #f2f2f2;
   padding-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    height: 340px;
+  }
 }
 
 .table__wrapper {
   padding-top: 117px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 35px;
+  }
 }
 
 .table--mobile {
-  .table-row__empty--cell {
-    background: transparent;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
   }
+}
 
-  .table-row__info {
-    height: 59px;
-    background: @white-color;
-    border: 2px solid #e5e5e5;
-    border-radius: 1px 0 0 0;
+.table-row__empty--cell {
+  background: transparent;
+}
+
+.table-row__info {
+  height: 59px;
+  background: @white-color;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    height: 45px;
   }
+}
 
-  .table-row__title {
-    padding: 5px 20px;
-    background: @base-color;
-    border: 2px solid @base-color;
-    border-radius: 1px 0 0 0;
-    font-family: @font-family, "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    color: @white-color;
-    text-align: center;
-    text-transform: uppercase;
+.table-row__title {
+  padding: 5px 20px;
+  background: @base-color;
+  border: 2px solid @base-color;
+  border-radius: 1px 0 0 0;
+  font-family: @font-family, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: @white-color;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9px;
   }
+}
 
-  .table-row__price {
-    background-color: @base-color;
-    border: 2px solid @base-color;
-    border-radius: 1px 0 0 0;
-    font-family: @font-family, "Arial", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: @white-color;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.table-row__price {
+  background-color: @base-color;
+  border: 2px solid @base-color;
+  border-radius: 1px 0 0 0;
+  font-family: @font-family, "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: @white-color;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  .table-row__text {
-    font-family: @font-family, "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    color: @base-color;
+.table-row__text {
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: @base-color;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 30px 7px 15px;
     text-transform: none;
+    text-align: left;
   }
 }
 
 .table__toggles {
   margin-top: 45px;
+}
+
+.table-row {
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    height: 75px;
+  }
 }

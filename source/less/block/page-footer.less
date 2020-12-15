@@ -1,3 +1,28 @@
 .page-footer {
   background-color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    margin-top: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: @tablet-width) {
+    margin-top: 190px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }

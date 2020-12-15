@@ -24,7 +24,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
-    line-height: 20px;
+    line-height: 8px;
   }
 }
 
@@ -36,7 +36,10 @@
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 660px;
     height: 460px;
+    padding-top: 65px;
     display: flex;
     flex-direction: column;
   }
@@ -51,6 +54,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    text-align: left;
   }
 }
 
@@ -59,6 +63,8 @@
 
   @media (min-width: @tablet-width) {
     width: 310px;
+    margin-left: 330px;
+    padding-bottom: 30px;
   }
 }
 
@@ -76,7 +82,8 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 310px;
+    text-align: left;
   }
 }
 
@@ -101,28 +108,53 @@
     background-repeat: no-repeat;
     width: 268px;
     height: 547px;
-    top: -300px;
-    left: 0;
+    top: -350px;
+    left: -310px;
   }
 }
 
-.advantages__item--research {
-  display: none;
+.advantages__item--research::before {
+  position: absolute;
+  content: "";
   background-image: url("../img/timer24.svg");
   background-repeat: no-repeat;
+  width: 238px;
+  height: 276px;
+  top: 10px;
+  left: -310px;
+}
+
+.advantages__item--research {
+  position: relative;
+  display: none;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     height: 276px;
-    display: block;
+    margin-left: 430px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   h3 {
     color: #000000;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 42px;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 36px;
+      text-align: left;
+    }
   }
 
   a {
     color: @active;
     text-decoration: underline;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 24px;
+    }
   }
 }
