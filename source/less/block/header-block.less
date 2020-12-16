@@ -7,9 +7,17 @@
   // background-position:;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     width: 660px;
     background: url("../img/back-tablet.png");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background: url("../img/back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top;
   }
 }
 
@@ -22,6 +30,14 @@
     background: url("../img/hand.png");
     background-repeat: no-repeat;
     height: 497px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/hand-desktop.png");
+    background-repeat: no-repeat;
+    height: 645px;
+    margin-left: 40px;
+    margin-top: -23px;
   }
 }
 
@@ -92,6 +108,10 @@
   font-weight: 300;
   line-height: 39px;
   color: @white-color;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+  }
 
   p {
     margin-top: 12px;

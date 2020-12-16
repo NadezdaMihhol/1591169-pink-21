@@ -5,6 +5,11 @@
     width: 660px;
     margin: 0 auto;
   }
+
+  @media (min-width: @desktop-width) {
+   width: 1200px;
+   margin: 0 auto;
+  }
 }
 
 .page-footer__wrapper {
@@ -12,6 +17,12 @@
     margin-top: 350px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: @desktop-width) {
+      height: 197px;
+      background-color: @white-color;
+      justify-content: space-around;
+     }
   }
 }
 

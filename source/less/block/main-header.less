@@ -12,9 +12,18 @@
   justify-content: space-around;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     width: 660px;
     height: 110px;
     background: url("../img/back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 1200px;
+    height: 110px;
+    background: url("../img/back-desktop.png");
     background-repeat: no-repeat;
     background-position: top;
   }
@@ -39,10 +48,26 @@
     background-image: url("../img/logotype-white-tablet.png");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    background-image: url("../img/logotype-white-desktop.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-nav__wrapper {
+
+  .main-nav__list {
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
+  }
   .main-nav__item {
+    @media (min-width: @desktop-width) {
+      padding: 0 50px;
+    }
+
     a {
       font-family: @font-family, "Arial", sans-serif;
       font-size: 18px;
@@ -51,6 +76,12 @@
       text-decoration: none;
       color: @white-color;
       text-transform: uppercase;
+
+      @media (min-width: @desktop-width) {
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: none;
+      }
     }
   }
 }
