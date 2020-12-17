@@ -1,18 +1,38 @@
 .reviews {
   // position: absolute;
+  width: 320px;
   height: 364px;
   background-color: #ffffff;
-  padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 430px;
     margin: 0 auto;
   }
 }
 
-.rewiews__wrapper {
+.reviews__wrapper {
+  width: 280px;
+  padding: 0 20px;
+
+   @media (min-width: @tablet-width) {
+     width: 620px;
+     padding: 0 20px;
+   }
+}
+
+.rewiews__content {
   @media (min-width: @tablet-width) {
     margin-top: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 170px;
   }
 }
 
@@ -34,6 +54,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    padding-top: 40px;
   }
 }
 
@@ -41,6 +62,9 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
   }
 }
 
@@ -73,5 +97,9 @@
     width: 620px;
     font-size: 18px;
     order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
   }
 }

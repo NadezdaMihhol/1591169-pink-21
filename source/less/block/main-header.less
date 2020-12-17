@@ -1,27 +1,19 @@
 .main-header {
-  width: 100%;
-}
-
-.page-header {
   height: 66px;
   background: url("../img/back-mobile.png");
   background-repeat: no-repeat;
-  background-position: top;
   color: @base-color;
   display: flex;
   justify-content: space-around;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 660px;
     height: 110px;
     background: url("../img/back-tablet.png");
     background-repeat: no-repeat;
     background-position: top;
   }
 
-  @media (min-width: @desktop-width){
-    width: 1200px;
+  @media (min-width: @desktop-width) {
     height: 110px;
     background: url("../img/back-desktop.png");
     background-repeat: no-repeat;
@@ -29,12 +21,40 @@
   }
 }
 
+.page-header__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+}
+
+.page-header {
+  color: @base-color;
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header__bar {
   padding: 21px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 20px;
     margin-top: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 2px;
+    margin-top: 20px;
   }
 
   .page-header__image {
@@ -65,7 +85,7 @@
   }
   .main-nav__item {
     @media (min-width: @desktop-width) {
-      padding: 0 50px;
+      padding: 0 35px;
     }
 
     a {

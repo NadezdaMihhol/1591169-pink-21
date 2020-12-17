@@ -1,54 +1,97 @@
 .header-block {
   position: relative;
-  width: 320px;
-  min-height: 553px;
+  min-width: 320px;
+  margin: 0 auto;
   background: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   // background-position:;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
     width: 660px;
+    margin: 0 auto;
     background: url("../img/back-tablet.png");
     background-repeat: no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    margin: 0 auto;
+    height: 735px;
     background: url("../img/back-desktop.png");
     background-repeat: no-repeat;
     background-position: top;
   }
 }
 
+.header-block__wrapper {
+  position: relative;
+  width: 280px;
+  min-height: 553px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin-left: 100px;
+    padding: 0 130px;
+  }
+}
+
+.header-block__content {
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 39px;
+  color: @white-color;
+
+  p {
+    margin-top: 12px;
+    font-family: @font-family, "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  }
+}
+
 .hand-img {
-  height: 286px;
+  height: 280px;
   background: url("../img/hand-iphone.png");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
+    height: 497px;
     background: url("../img/hand.png");
     background-repeat: no-repeat;
-    height: 497px;
   }
 
   @media (min-width: @desktop-width) {
+    height: 645px;
+    margin-left: 50px;
+    margin-top: -240px;
     background: url("../img/hand-desktop.png");
     background-repeat: no-repeat;
-    height: 645px;
-    margin-left: 40px;
-    margin-top: -23px;
   }
 }
 
 .header-block__application {
-  background-color: #1d2631;
   height: 271px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: #1d2631;
 
   @media (min-width: @tablet-width) {
     position: relative;
     background-color: transparent;
-    top: -380px;
+    top: -480px;
     left: 20px;
     text-align: left;
     z-index: 2;
@@ -60,8 +103,12 @@
   padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 55px;
+    margin-left: 35px;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 45px;
   }
 }
 
@@ -75,10 +122,17 @@
   color: @white-color;
 
   @media (min-width: @tablet-width) {
-    padding-top: 102px;
+    padding-top: 90px;
     font-size: 40px;
     line-height: 48px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 90px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
 }
 
 .header-block__button {
@@ -99,31 +153,6 @@
     width: 300px;
     margin-bottom: 50px;
     background-color: transparent;
-  }
-}
-
-.header-block__wrapper {
-  font-family: @font-family, "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 39px;
-  color: @white-color;
-
-  @media (min-width: @desktop-width) {
-    margin-left: 100px;
-  }
-
-  p {
-    margin-top: 12px;
-    font-family: @font-family, "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-
-    @media (min-width: @tablet-width) {
-      margin-top: 30px;
-      font-size: 18px;
-    }
   }
 }
 

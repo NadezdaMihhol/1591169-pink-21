@@ -1,5 +1,17 @@
-.advantages {
+.advantages__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 130px;
     margin: 0 auto;
   }
 }
@@ -14,7 +26,6 @@
 
   .advantages__text-more {
     @media (min-width: @tablet-width) {
-      padding: 0 190px;
       line-height: 50px;
     }
 
@@ -44,23 +55,21 @@
 
 .advantages__container {
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
     background-color: #f2f2f2;
   }
 }
 
 .advantages__item-wrapper {
-  padding-top: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 828px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 85px 20px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 660px;
     height: 460px;
-    padding-top: 65px;
+    margin-left: -40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -123,12 +132,13 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 310px;
+    width: 298px;
     text-align: left;
   }
 
   @media (min-width: @desktop-width){
     width: 237px;
+    padding-top: 23px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
@@ -178,7 +188,7 @@
   content: "";
   background-image: url("../img/iphone-hy.svg");
   background-repeat: no-repeat;
-  top: 220px;
+  top: 150px;
   left: 60px;
   width: 157px;
   height: 320px;
@@ -203,6 +213,13 @@
   }
 }
 
+.research-wrapper {
+  @media (min-width: @desktop-width) {
+    margin-left: 169px;
+    margin-bottom: 67px;
+  }
+}
+
 .advantages__item--research::before {
   position: absolute;
   content: "";
@@ -213,8 +230,18 @@
   top: 10px;
   left: -310px;
 
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+  }
+
   @media (min-width: @desktop-width) {
     top: -30px;
+    background-image: url("../img/timer-desktop.svg");
+    width: 298px;
+    height: 345px;
+    top: -50px;
+    left: -370px;
   }
 }
 
@@ -224,13 +251,11 @@
 
   @media (min-width: @tablet-width) {
     height: 276px;
-    margin-left: 430px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    height: 429px;
     display: flex;
     flex-direction: column;
   }
@@ -240,16 +265,28 @@
 
     @media (min-width: @tablet-width) {
       margin-top: 42px;
+      margin-left: 310px;
       font-size: 30px;
       font-weight: bold;
       line-height: 36px;
       text-align: left;
     }
+
+    @media (min-width: @desktop-width) {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
 
   p {
+    @media (min-width: @tablet-width) {
+      margin-left: 310px;
+    }
+
     @media (min-width: @desktop-width) {
       width: 534px;
+      font-size: 18px;
+      line-height: 30px;
       text-align: left;
     }
   }
@@ -259,13 +296,14 @@
     text-decoration: underline;
 
     @media (min-width: @tablet-width) {
+      margin-left: 310px;
       font-size: 14px;
       font-weight: normal;
       line-height: 24px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 20px;
+      margin-top: 28px;
       text-align: left;
       font-size: 18px;
       line-height: 30px;
