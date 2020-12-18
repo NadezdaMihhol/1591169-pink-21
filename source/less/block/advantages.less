@@ -1,3 +1,21 @@
+.advantages {
+  width: 320px;
+  background-color: #ffff;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 660px;
+    margin-top: -480px;
+    z-index: 10;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 1200px;
+    margin-top: -505px;
+  }
+}
+
 .advantages__wrapper {
   width: 280px;
   padding: 0 20px;
@@ -17,11 +35,12 @@
 }
 
 .advantages__slogan {
-  margin-top: 40px;
+  padding-top: 40px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin-top: 58px;
-    margin-bottom: 47px;
+    padding-top: 88px;
+    padding-bottom: 47px;
   }
 
   .advantages__text-more {
@@ -63,21 +82,23 @@
   height: 828px;
   margin-left: -20px;
   margin-right: -20px;
-  padding: 85px 20px;
+  padding: 85px 20px 0;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
     height: 460px;
-    margin-left: -40px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
+    padding: 30px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 872px;
-    height: 715px;
+    margin: 0 auto;
+    padding: 0 35px;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
     background-color: none;
   }
 }
@@ -95,8 +116,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 240px;
     font-size: 30px;
-    font-weight: bold;
     line-height: 30px;
     text-align: center;
   }
@@ -159,6 +180,8 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 382px;
+    top: 250px;
+    left: 20px;
   }
 }
 
@@ -176,6 +199,8 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 382px;
+    top: 250px;
+    left: 20px;
   }
 }
 
@@ -208,14 +233,14 @@
     background-image: url("../img/iphone-friends-desktop.svg");
     width: 186px;
     height: 382px;
-    top: 0;
-    left: 0;
+    top: 250px;
+    left: 20px;
   }
 }
 
 .research-wrapper {
   @media (min-width: @desktop-width) {
-    margin-left: 169px;
+    margin-top: 120px;
     margin-bottom: 67px;
   }
 }
@@ -236,12 +261,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: -30px;
     background-image: url("../img/timer-desktop.svg");
     width: 298px;
     height: 345px;
-    top: -50px;
-    left: -370px;
   }
 }
 
@@ -251,13 +273,15 @@
 
   @media (min-width: @tablet-width) {
     height: 276px;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    padding-top: 50px;
+    padding-right: 45px;
+    padding-bottom: 112px;
+    padding-left: 58px;
   }
 
   h3 {
@@ -285,6 +309,7 @@
 
     @media (min-width: @desktop-width) {
       width: 534px;
+      padding-bottom: 30px;
       font-size: 18px;
       line-height: 30px;
       text-align: left;
@@ -296,14 +321,14 @@
     text-decoration: underline;
 
     @media (min-width: @tablet-width) {
-      margin-left: 310px;
+      margin-left: 220px;
       font-size: 14px;
       font-weight: normal;
       line-height: 24px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 28px;
+      margin-left: 60px;
       text-align: left;
       font-size: 18px;
       line-height: 30px;
