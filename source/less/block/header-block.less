@@ -1,18 +1,24 @@
 .header-block {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   min-height: 553px;
   background: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   // background-position:;
 
+  @media (min-width: @mobile-width) {
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     width: 660px;
     background: url("../img/back-tablet.png");
     background-repeat: no-repeat;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1200px;
     background: url("../img/back-desktop.png");
     background-repeat: no-repeat;

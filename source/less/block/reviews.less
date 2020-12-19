@@ -4,29 +4,32 @@
   height: 364px;
   background-color: #ffffff;
 
+  @media (min-width: @mobile-width) {
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     width: 660px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1200px;
     height: 430px;
   }
 }
 
 .reviews__wrapper {
-  margin: 0 auto;
   padding: 0 20px;
 
-   @media (min-width: @tablet-width) {
-      margin: 0 auto;
-      padding: 0 20px;
-   }
-
-   @media (min-width: @desktop-width) {
-      margin: 0 auto;
-      padding: 0 130px;
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+}
 }
 
 .rewiews__content {
