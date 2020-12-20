@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   height: 364px;
-  background-color: #ffffff;
+  background-color: @white-color;
 
   @media (min-width: @mobile-width) {
     margin: 0 auto;
@@ -11,12 +11,14 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 660px;
+    padding-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     width: 1200px;
     height: 430px;
+    padding-top: 0;
   }
 }
 
@@ -29,7 +31,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
-}
+  }
 }
 
 .rewiews__content {
@@ -68,9 +70,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (min-width: @desktop-width) {
   }
 }
 
