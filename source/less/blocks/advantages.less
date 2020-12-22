@@ -1,0 +1,323 @@
+.advantages {
+  background-color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 10;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+}
+
+.advantages__slogan {
+  margin: 0 auto;
+  padding-top: 40px;
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 88px;
+    padding-bottom: 47px;
+  }
+
+  .advantages__text-more {
+    @media (min-width: @tablet-width) {
+      line-height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      line-height: 70px;
+    }
+  }
+}
+
+.advantages__text {
+  padding: 0 0 30px;
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.advantages__container {
+  background-color: #f2f2f2;
+}
+
+.advantages__item-wrapper {
+  height: 678px;
+  padding: 60px 10px 30px 10px;
+
+  @media (min-width: @tablet-width) {
+    height: 425px;
+    margin-left: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: none;
+  }
+}
+
+.advantages__item-title {
+  font-family: @font-family, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.advantages__item {
+  margin: 0 auto;
+  padding-bottom: 26px;
+
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-left: 0;
+  }
+}
+
+.advantages__description {
+  padding-top: 15px;
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: @base-color;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 237px;
+    padding-top: 23px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.item__mood {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.item__mood::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-mood.svg");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 382px;
+    left: 20px;
+  }
+}
+
+.item__world {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.item__world::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-world.svg");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 382px;
+    left: 20px;
+  }
+}
+
+.item__friends {
+  position: relative;
+}
+
+.item__friends::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/iphone-hy.svg");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 320px;
+  top: 150px;
+  left: 60px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone3.svg");
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 547px;
+    top: -350px;
+    left: -310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/iphone-friends-desktop.svg");
+    width: 186px;
+    height: 382px;
+    top: 250px;
+    left: 20px;
+  }
+}
+
+.research-wrapper {
+  background-color: @white-color;
+  position: relative;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    height: 276px;
+    margin-top: -50px;
+    padding: 0 30px 0 20px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-top: 50px;
+    padding-right: 45px;
+    padding-bottom: 112px;
+    padding-left: 58px;
+    margin-bottom: 67px;
+    margin-top: 410px;
+    background-color: #f2f2f2;
+  }
+}
+
+.advantages__item--research::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/timer24.svg");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 276px;
+  top: 10px;
+  left: -310px;
+
+  @media (min-width: @tablet-width) {
+    top: 50px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/timer-desktop.svg");
+  }
+}
+
+.advantages__item--research {
+  position: relative;
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+      width: 600px;
+  }
+
+  h3 {
+    color: #000000;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 112px;
+      margin-left: 310px;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 36px;
+      text-align: left;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  p {
+    @media (min-width: @tablet-width) {
+      margin-left: 310px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 534px;
+      padding-bottom: 30px;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+
+  a {
+    color: @active;
+    text-decoration: underline;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 240px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 60px;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+}

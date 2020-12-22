@@ -1,0 +1,214 @@
+.header-block {
+  position: relative;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: @base-color;
+
+  @media (min-width: @mobile-width) {
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/bg-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/bg-desktop.jpg");
+  }
+}
+
+.header-block__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 69px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 110px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 110px 0;
+  }
+}
+
+.header-block__content {
+  position: relative;
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 39px;
+  color: @white-color;
+
+  p {
+    margin-top: 12px;
+    font-family: @font-family, "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+      width: 300px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 300px;
+      margin-top: 40px;
+    }
+  }
+}
+
+.hand-img {
+  position: relative;
+}
+
+.hand-img--image {
+  width: 320px;
+  height: 280px;
+  top: 30px;
+  right: 0;
+  background: url("../img/hand-iphone.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: 0;
+    width: 660px;
+    height: 545px;
+    top: 130px;
+    left: 10px;
+    background: url("../img/hand.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    height: 645px;
+    background: url("../img/hand-desktop.png");
+  }
+}
+
+.header-block__application {
+  background-color: #1d2631;
+  z-index: 10;
+  margin-top: 31px;
+  margin-left: -20px;
+  padding-bottom: 30px;
+
+  @media (min-width: @mobile-width) {
+    width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-top: 0;
+    background-color: transparent;
+    text-align: left;
+  }
+}
+
+.header-block__application-container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 0;
+  }
+}
+
+.header-block__slogan {
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.header-block__title {
+  padding-top: 19px;
+  font-family: @font-family, "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding-top: 90px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 90px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .header-br {
+    @media (min-width: @mobile-width) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.header-block__button {
+  width: 280px;
+  height: 55px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  border: 3px solid @white-color;
+  box-sizing: border-box;
+  border-radius: 29px;
+  background-color: #1d2631;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+    font-size: 21px;
+  }
+}
+
+.header-block__app {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+  }
+}
+
+.app-icon--ms {
+  margin-top: 10px;
+}
