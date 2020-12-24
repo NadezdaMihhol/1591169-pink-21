@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>HTML Academy: Пинк</title>
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body class="form-body">
   <header class="main-header">
     <div class="page-header">
       <div class="page-header__bar">
-        <a class="page-header__logo" href="index.html">Pink
-          <img class="page-header__image page-header__logo--image" src="https://via.placeholder.com/150x150" width="74" height="23" alt="Логотип Пинк">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__image page-header__logo--image" src="img/pink.png" width="74" height="23" alt="Логотип Пинк">
         </a>
       </div>
       <nav class="main-nav">
@@ -47,12 +48,12 @@
     <section class="header-block">
       <div class="header-block__wrapper">
         <div class="header-block__slogan">
-          <h2 class="header-block__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2 class="header-block__title form-block__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
       </div>
     </section>
     <section class="main-form">
-      <h4 class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h4>
+      <h4 class="main-form__title">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h4>
       <form class="main-form__filter" method="GET" action="https://echo.htmlacademy.ru">
         <div class="main-form__wrapper">
           <fieldset class="filter__text">
@@ -71,47 +72,49 @@
             </div>
           </fieldset>
         </div>
-        <div class="filter-checkbox__form filter-checkbox__form--wrapper">
+        <div class="filter-checkbox__wrapper">
           <fieldset class="filter-checkbox__form">
-            <legend class="filter-checkbox__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="filter-checkbox__list">
-              <li class="filter-checkbox__item">
-                <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="selfi" id="checkbox1" checked>
-                <label class="filter-label__checkbox" for="checkbox1">Сделал селфи с акулой</label>
-              </li>
-              <li class="filter-checkbox__item">
-                <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="beach" id="checkbox2" checked>
-                <label class="filter-label__checkbox" for="checkbox2">Обгорел на пляже</label>
-              </li>
-              <li class="filter-checkbox__item">
-                <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="chack" id="checkbox3">
-                <label class="filter-label__checkbox" for="checkbox4">Видел Чака Норриса</label>
-              </li>
-              <li class="filter-checkbox__item">
-                <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="souvenirs" id="checkbox4">
-                <label class="filter-label__checkbox" for="checkbox4">Накупил сувениров</label>
-              </li>
-              <li class="filter-checkbox__item">
-                <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="tower" id="checkbox5" checked>
-                <label class="filter-label__checkbox" for="checkbox5">Удержал башню</label>
-              </li>
-              <li class="filter-checkbox__item">
-                <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="hotel" id="checkbox6">
-                <label class="filter-label__checkbox" for="checkbox6">Разгромил отель</label>
-              </li>
-            </ul>
+            <div class="filter-checkbox__block">
+              <legend class="filter-checkbox__title">Ваши безбашенные <br>достижения в путешествии</legend>
+              <ul class="filter-checkbox__list">
+                <li class="filter-checkbox__item">
+                  <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="selfi" id="checkbox1" checked>
+                  <label class="filter-label__checkbox" for="checkbox1">Сделал селфи с акулой</label>
+                </li>
+                <li class="filter-checkbox__item">
+                  <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="beach" id="checkbox2" checked>
+                  <label class="filter-label__checkbox" for="checkbox2">Обгорел на пляже</label>
+                </li>
+                <li class="filter-checkbox__item">
+                  <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="chack" id="checkbox3">
+                  <label class="filter-label__checkbox" for="checkbox4">Видел Чака Норриса</label>
+                </li>
+                <li class="filter-checkbox__item">
+                  <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="souvenirs" id="checkbox4">
+                  <label class="filter-label__checkbox" for="checkbox4">Накупил сувениров</label>
+                </li>
+                <li class="filter-checkbox__item">
+                  <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="tower" id="checkbox5" checked>
+                  <label class="filter-label__checkbox" for="checkbox5">Удержал башню</label>
+                </li>
+                <li class="filter-checkbox__item">
+                  <input class="filter-input__checkbox" type="checkbox" name="checkbox" value="hotel" id="checkbox6">
+                  <label class="filter-label__checkbox" for="checkbox6">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
         <div class="filter-contacts__wrapper">
           <fieldset class="filter-contacts__form">
-            <legend class="filter-contacts__title">Контактная информация</legend>
+            <legend class="filter-contacts__title visually-hidden">Контактная информация</legend>
             <div class="filter-contacts__item">
-              <input class="filter-contacts__input" type="tel" name="telephone" id="tel" placeholder="Номер, пожалуйста">
               <label class="filter-contacts__label" for="tel">Номер телефона</label>
+              <input class="filter-contacts__input" type="tel" name="telephone" id="tel" placeholder="Номер, пожалуйста">
             </div>
             <div class="filter-contacts__item">
-              <input class="filter-contacts__input" type="email" name="e-mail" id="e-mail" placeholder="Введите почту *">
               <label class="filter-contacts__label" for="e-mail">Адрес почты</label>
+              <input class="filter-contacts__input" type="email" name="e-mail" id="e-mail" placeholder="Введите почту *">
             </div>
           </fieldset>
         </div>
@@ -138,8 +141,7 @@
           <fieldset class="filter-textarea__form">
             <legend class="filter-textarea__title">Опишите свои эмоции</legend>
             <label class="filter-textarea__label" for="filter-textarea"></label>
-            <textarea class="filter-textarea__text" name="comments" cols="20" rows="6" id="filter-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </textarea>
+            <textarea class="filter-textarea__text" name="comments" cols="20" rows="6" id="filter-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
         <button class="main-form__button" type="submit">Отправить форму</button>
@@ -149,8 +151,8 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__bar">
-      <a class="page-footer__logo" href="index.html">Pink
-      <img class="page-footer__logo page-footer__logo--image" src="https://via.placeholder.com/150x150" width="145" height="40" alt="Логотип Пинк">
+      <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo page-footer__logo--image" src="img/logotype-blue-tablet.png" width="145" height="40" alt="Логотип Пинк">
       </a>
     </div>
     <div class="page-footer__social">
