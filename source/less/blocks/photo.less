@@ -2,10 +2,45 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 0 130px;
+  }
 
   .photo__upload-background {
     background-color: #f2f2f2;
     padding: 20px 0;
+
+    @media (min-width: @tablet-width) {
+      width: 700px;
+      padding: 57px 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 940px;
+      padding: 57px 80px;
+    }
+  }
+
+  .photo__upload-wrapper {
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
   }
 
   .photo__upload-title {
@@ -18,11 +53,31 @@
     line-height: 30px;
     color: @base-color;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      width: 422px;
+      font-size: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 422px;
+      font-size: 18px;
+    }
   }
 }
 
 .upload__btn-wrapper {
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
   button {
     width: 280px;
@@ -35,11 +90,29 @@
     line-height: 18px;
     align-items: center;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+    }
   }
 
   .upload__submit {
     border: 3px solid @active;
     color: @active;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+      padding: 0 80px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+      padding: 0 42px;
+    }
   }
 
   .upload__reset {
@@ -47,5 +120,28 @@
     border: 3px solid @base-color;
     color: @base-color;
     opacity: 0.1;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+      padding: 0 80px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+      padding: 0 52px;
+      margin-left: 44px;
+      margin-top: 0;
+    }
+  }
+}
+
+.upload__block-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    padding-left: 90px;
   }
 }

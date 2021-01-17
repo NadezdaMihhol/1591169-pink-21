@@ -1,4 +1,12 @@
 .form-textarea__wrapper {
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+  }
+
   .form-textarea__fieldset {
     background-color: @white-color;
   }
@@ -10,15 +18,29 @@
     line-height: 18px;
     text-transform: uppercase;
     color: @active;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 35px;
+    }
   }
 
   .form-textarea__text {
-    margin-top: 10px;
     width: 276px;
     height: 197px;
+    margin-top: 10px;
     margin-bottom: 45px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+
+    @media (min-width: @tablet-width) {
+      width: 496px;
+      height: 189px;
+      margin-top: 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 816px;
+    }
   }
 
   .form-textarea__text::placeholder {
