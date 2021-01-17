@@ -138,24 +138,10 @@
   }
 }
 
-.google-map {
-  position: relative;
-}
-
-.google-map::before {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    content: "";
-    width: 660px;
-    height: 374px;
-    background: url("../img/tablet.map.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    left: -330px;
-  }
-}
-
 .feedback-map {
+  width: 320px;
+  height: 200px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

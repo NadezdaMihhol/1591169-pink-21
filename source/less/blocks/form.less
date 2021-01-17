@@ -1,5 +1,48 @@
+.form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // width: 620px;
+    // margin: 0 auto 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 fieldset {
   border: 0 none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+.form-button--block {
+  @media (min-width: @tablet-width) {
+    order: 6;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__button {
@@ -23,4 +66,8 @@ fieldset {
   line-height: 30px;
   color: @base-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
 }
