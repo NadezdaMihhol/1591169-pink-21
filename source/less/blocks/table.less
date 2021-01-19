@@ -1,6 +1,7 @@
 .table {
+  position: relative;
+  z-index: 10;
   width: calc(300% - 120px);
-  // height: 460px;
   border-collapse: collapse;
   background-color: #f2f2f2;
 
@@ -21,6 +22,29 @@
   }
 }
 
+.table::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  background-image: linear-gradient(to left top, #f2f2f2, #f2f2f2 50%, transparent 50%, transparent);
+
+  @media (min-width: @mobile-width) {
+    top: -35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -35px;
+  }
+}
+
 .table__wrapper {
   padding: 0 20px;
 
@@ -35,7 +59,7 @@
 
 .table__content {
   display: flex;
-  padding-top: 90px;
+  padding-top: 85px;
 
   @media (min-width: @tablet-width) {
     padding-top: 69px;
@@ -126,20 +150,63 @@
 }
 
 .table__toggles {
-  margin-top: 45px;
+  @media (min-width: @mobile-width) {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
 
-    @media (min-width: @desktop-width) {
-      display: none;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
+  .slider__toggle {
+    @media (min-width: @mobile-width) {
+      background-color: transparent;
+      border: 3.5px solid @base-color;
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      margin: 2px 9px;
+      opacity: 0.3;
+      outline: none;
+      padding: 0;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+    }
+  }
+
+  .slider__toggle--current {
+    @media (min-width: @mobile-width) {
+      background: @white-color;
+      background-color: transparent;
+      border: 3.5px solid @base-color;
+      width: 12px;
+      height: 12px;
+      margin: 0 7px;
+      opacity: 1;
+      pointer-events: none;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
     }
   }
 }
 
 .table-row {
   width: 33.333333%;
-  height: 100px;
 
   @media (min-width: @tablet-width) {
     width: 152px;
@@ -150,4 +217,36 @@
     width: 233px;
     height: 94px;
   }
+}
+
+.table-row__text--yes::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 25px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-right: 4px solid #3dc644;
+  border-bottom: 4px solid #3dc644;
+  transform: rotate(45deg);
+}
+
+.table-row__text--no::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 35px;
+  height: 3px;
+  background-color: #f25b26;
+  transform: rotate(45deg);
+}
+
+.table-row__text--no::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 35px;
+  height: 3px;
+  background-color: #f25b26;
+  transform: rotate(-45deg);
 }

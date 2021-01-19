@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-color: @base-color;
+  margin-top: -66px;
 
   @media (min-width: @mobile-width) {
     background-size: cover;
@@ -11,37 +12,39 @@
 
   @media (min-width: @tablet-width) {
     background: url("../img/bg-tablet.jpg");
+    margin-top: -89px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 850px;
     background: url("../img/bg-desktop.jpg");
+    padding-top: 110px;
+    margin-top: 0;
   }
 }
 
-.header-block--form {
-  @media (min-width: @tablet-width) {
-    // height: 332px;
-  }
+// .header-block--form {
+//   @media (min-width: @tablet-width) {
+//     // height: 332px;
+//   }
 
-  @media (min-width: @desktop-width) {
-    height: 394px;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     height: 394px;
+//   }
+// }
 
 .header-block__wrapper {
   margin: 0 auto;
   width: 280px;
-  padding-top: 69px;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
-    padding: 110px 0;
+    padding-top: 98px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    padding: 110px 0;
+    padding: 0;
   }
 }
 
@@ -93,7 +96,7 @@
   width: 320px;
   height: 280px;
   top: 30px;
-  right: 0;
+  right: 15px;
   background: url("../img/hand-iphone-mobile@1x.png");
   background-repeat: no-repeat;
 
@@ -102,14 +105,17 @@
     z-index: 0;
     width: 660px;
     height: 545px;
-    top: 130px;
-    left: 10px;
+    top: 70px;
+    bottom: 0;
+    left: -20px;
     background: url("../img/hand-iphone-tablet@1x.png");
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
     height: 645px;
+    top: 90px;
+    left: 20px;
     background: url("../img/hand-iphone-desktop@1x.png");
     background-position: 50% 0;
     background-size: cover;
@@ -133,6 +139,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 114px;
     position: relative;
     margin-top: 0;
     background-color: transparent;
@@ -171,7 +178,7 @@
 }
 
 .header-block__title {
-  padding-top: 19px;
+  padding-top: 49px;
   font-family: @font-family, "Arial", sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -262,8 +269,6 @@
     font-size: 50px;
     line-height: 68px;
   }
-  padding-top: 30px;
-  line-height: 33px;
 }
 
 .header-block__button {

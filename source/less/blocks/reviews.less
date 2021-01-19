@@ -8,9 +8,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 210px;
     width: 660px;
-    padding-top: 35px;
+    padding-top: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,8 +44,21 @@
   }
 }
 
+.reviews__item::before {
+  @media (min-width: @desktop-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("../img/quotes.svg");
+    width: 79px;
+    height: 63px;
+    left: 47%;
+    top: -110px;
+  }
+}
+
 .reviews__author-name {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 12px;
   font-family: @font-family, "Arial", sans-serif;
   font-weight: 700;
@@ -70,6 +84,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -27px;
   }
 }
 
@@ -107,4 +125,124 @@
     width: 688px;
     margin: 0 auto;
   }
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+  }
+}
+
+.slider__toggle {
+  background-color: transparent;
+  border: 3.5px solid @base-color;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  margin: 2px 9px;
+  opacity: 0.3;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle--current {
+  background: @white-color;
+  background-color: transparent;
+  border: 3.5px solid @base-color;
+  width: 12px;
+  height: 12px;
+  margin: 0 7px;
+  opacity: 1;
+  pointer-events: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.slider__controls {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.slider__controls-left {
+  position: absolute;
+  display: block;
+  margin-top: 30px;
+  width: 22px;
+  height: 41px;
+  right: 130px;
+  top: 0;
+  background: 0 0;
+  z-index: 10;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__controls-left::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  border-top: 3px solid @base-color;
+  border-right: 3px solid @base-color;
+  transform: rotate(45deg);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.slider__controls-right {
+  position: absolute;
+  display: block;
+  margin-top: 30px;
+  width: 22px;
+  height: 41px;
+  top: 0;
+  background: 0 0;
+  z-index: 10;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__controls-right::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+  border-top: 3px solid @base-color;
+  border-right: 3px solid @base-color;
+  transform: rotate(-135deg);
+  opacity: 0.3;
 }
