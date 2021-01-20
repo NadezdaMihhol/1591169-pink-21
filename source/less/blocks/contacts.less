@@ -1,27 +1,28 @@
 .contacts {
-  width: 320px;
   background-color: @white-color;
 
-  @media (min-width: @mobile-width) {
-    margin: 0 auto;
-  }
+  // @media (min-width: @mobile-width) {
+  //   margin: 0 auto;
+  // }
 
-  @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 660px;
-  }
+  // @media (min-width: @tablet-width) {
+  //   margin: 0 auto;
+  //   width: 660px;
+  // }
 
-  @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: 1200px;
-  }
+  // @media (min-width: @desktop-width) {
+  //   margin: 0 auto;
+  //   width: 1200px;
+  // }
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
-  padding: 0 20px;
+  @media (min-width: @mobile-width) {
+    padding: 0 20px;
+  }
 
   @media (min-width: @tablet-width) {
+    width: 660px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -32,8 +33,15 @@
   }
 }
 
+.contacts__details {
+  @media (min-width: @mobile-width) {
+    position: relative;
+    z-index: 100;
+  }
+}
+
 .contacts__title {
-  margin-top: 65px;
+  margin-top: 40px;
   font-family: @font-family, "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
@@ -138,9 +146,48 @@
   }
 }
 
+.feedback-map-container {
+  position: relative;
+  z-index: 50;
+}
+
+.feedback-map-container::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 33px;
+  left: 0;
+  top: -1px;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media (min-width: @tablet-width) {
+    top: -50px;
+    left: 0;
+    height: 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -57px;
+    left: 0;
+    height: 123px;
+  }
+}
+
 .feedback-map {
-  width: 320px;
-  height: 200px;
+  @media (min-width: @mobile-width) {
+    width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .feedback__item-write {
@@ -148,4 +195,10 @@
     order: 2;
     margin-left: -50px;
   }
+}
+
+.map-marker {
+  position: relative;
+  bottom: 165px;
+  left: 40px;
 }
