@@ -3,7 +3,7 @@
   z-index: 10;
   width: calc(300% - 120px);
   border-collapse: collapse;
-  background-color: #f2f2f2;
+  background-color: @grey-color;
 
   @media (min-width: @mobile-width) {
     margin: 0 auto;
@@ -31,7 +31,7 @@
   width: 100%;
   height: 35px;
   font-size: 18px;
-  background-image: linear-gradient(to left top, #f2f2f2, #f2f2f2 50%, transparent 50%, transparent);
+  background-image: linear-gradient(to left top, @grey-color, @grey-color 50%, transparent 50%, transparent);
 
   @media (min-width: @mobile-width) {
     top: -35px;
@@ -88,6 +88,20 @@
 
   @media (min-width: @desktop-width) {
     height: 59px;
+  }
+}
+
+.table-row {
+  width: 33.333333%;
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    height: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 233px;
+    height: 94px;
   }
 }
 
@@ -151,6 +165,38 @@
   }
 }
 
+.table-row__text--yes::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 25px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-right: 4px solid #3dc644;
+  border-bottom: 4px solid #3dc644;
+  transform: rotate(45deg);
+}
+
+.table-row__text--no::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 35px;
+  height: 3px;
+  background-color: #f25b26;
+  transform: rotate(45deg);
+}
+
+.table-row__text--no::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 35px;
+  height: 3px;
+  background-color: #f25b26;
+  transform: rotate(-45deg);
+}
+
 .table__toggles {
   @media (min-width: @mobile-width) {
     display: flex;
@@ -205,50 +251,4 @@
       }
     }
   }
-}
-
-.table-row {
-  width: 33.333333%;
-
-  @media (min-width: @tablet-width) {
-    width: 152px;
-    height: 75px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 233px;
-    height: 94px;
-  }
-}
-
-.table-row__text--yes::before {
-  content: "";
-  position: absolute;
-  width: 13px;
-  height: 25px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0);
-  border-right: 4px solid #3dc644;
-  border-bottom: 4px solid #3dc644;
-  transform: rotate(45deg);
-}
-
-.table-row__text--no::before {
-  content: "";
-  position: absolute;
-  margin: auto;
-  width: 35px;
-  height: 3px;
-  background-color: #f25b26;
-  transform: rotate(45deg);
-}
-
-.table-row__text--no::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  width: 35px;
-  height: 3px;
-  background-color: #f25b26;
-  transform: rotate(-45deg);
 }
