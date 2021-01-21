@@ -23,7 +23,8 @@
   align-items: center;
 
   @media (min-width: @desktop-width) {
-    padding: 0 10px;
+    padding: 33px 10px;
+    padding-bottom: 0;
   }
 }
 
@@ -118,6 +119,10 @@
 .main-nav--closed .main-nav__item--active a {
   padding-left: 70px;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .main-nav--nojs .main-nav__button {
@@ -143,8 +148,8 @@
   content: "";
   position: absolute;
   left: 17px;
-  width: 23px;
-  height: 4px;
+  width: 35px;
+  height: 3px;
   background-color: @white-color;
   transform: rotate(45deg);
   box-shadow: none;
@@ -154,8 +159,8 @@
   content: "";
   position: absolute;
   left: 17px;
-  width: 23px;
-  height: 4px;
+  width: 35px;
+  height: 3px;
   background-color: @white-color;
   transform: rotate(-45deg);
   box-shadow: none;
@@ -181,7 +186,7 @@
   top: 0;
 
   @media (min-width: @mobile-width) {
-    top: 10px;
+    top: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -190,9 +195,17 @@
 }
 
 .main-nav__list {
+  @media (min-width: @mobile-width) {
+    margin-bottom: -5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -25px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 619px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 163px;
     display: flex;
     justify-content: space-between;
@@ -200,7 +213,7 @@
 
   a {
     font-family: @font-family, "Arial", sans-serif;
-    padding: 0 0 11px;
+    padding: 0;
     font-size: 18px;
     font-weight: bold;
     line-height: 32px;
@@ -215,11 +228,6 @@
     &:active {
       color: @white-color;
       opacity: 0.3;
-
-      @media (min-width: @desktop-width) {
-        box-shadow: 0 2px 0 0 @white-color;
-        opacity: 1;
-      }
     }
 
     @media (min-width: @desktop-width) {
@@ -231,7 +239,7 @@
 }
 
 .main-nav__item {
-  padding: 20px 0;
+  padding: 15px 5px 0 0;
   min-height: 63px;
   box-sizing: border-box;
   border-bottom: 1px solid #000000;
@@ -241,5 +249,12 @@
   @media (min-width: @desktop-width) {
     background-color: transparent;
     border: none;
+    padding: 10px 5px 0 0;
+  }
+}
+
+.main-nav__item--active {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @white-color;
   }
 }

@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header page-header--menu-open" id="menu">
+    <header class="page-header page-header--menu-open page-header__clear" id="menu">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__menu-header">
           <a class="main-nav__title" href="index.html">
@@ -124,7 +124,7 @@
             <div class="research-wrapper">
               <div class="advantages__item--research">
                 <div class="item__block-research">
-                  <h3 class="advantages__item-title--24h">Эффект на 24 часа!</h3>
+                  <h3 class="advantages__item-title--24h">Эффект <br class="item-title__br">на 24 часа!</h3>
                   <p class="advantages__description research-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
                     <a href="#">Узнать больше об исследовании</a>
                   </p>
@@ -179,21 +179,39 @@
               </tr>
               <tr  class="table-row__info">
                 <td class="table-row__text">Розовый фильтр</td>
-                <td class="table-row__text--yes"></td>
-                <td class="table-row__text--yes"></td>
-                <td class="table-row__text--yes"></td>
+                <td class="table-row__text--yes">
+                  <span class="text--yes"></span>
+                </td>
+                <td class="table-row__text--yes">
+                  <span class="text--yes"></span>
+                </td>
+                <td class="table-row__text--yes">
+                  <span class="text--yes"></span>
+                </td>
               </tr>
                 <tr class="table-row__info">
                   <td class="table-row__text">Смайлики</td>
-                  <td class="table-row__text--no"></td>
-                  <td class="table-row__text--yes"></td>
-                  <td class="table-row__text--yes"></td>
+                  <td class="table-row__text--no">
+                    <span class="text--no"></span>
+                  </td>
+                  <td class="table-row__text--yes">
+                    <span class="text--yes"></span>
+                  </td>
+                  <td class="table-row__text--yes">
+                    <span class="text--yes"></span>
+                  </td>
                 </tr>
                 <tr class="table-row__info">
                   <td class="table-row__text">Комментарии</td>
-                  <td class="table-row__text--no"></td>
-                  <td class="table-row__text--no"></td>
-                  <td class="table-row__text--yes"></td>
+                  <td class="table-row__text--no">
+                    <span class="text--no"></span>
+                  </td>
+                  <td class="table-row__text--no">
+                    <span class="text--no"></span>
+                  </td>
+                  <td class="table-row__text--yes">
+                    <span class="text--yes"></span>
+                  </td>
                 </tr>
             </table>
           </div>
@@ -228,12 +246,12 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-                  <img class="feedback-map"  src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес офиса на карте">
-                  <svg class="map-marker">
-                    <circle r="17" cx="100" cy="50%" fill="white"/>
-                    <circle r="8" cx="100" cy="50%" fill="#D22856"/>
-                  </svg>
+                  <img class="feedback-map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес офиса на карте">
                 </picture>
+                <svg class="map-marker">
+                  <circle r="17" cx="100" cy="50%" fill="white"/>
+                  <circle r="8" cx="100" cy="50%" fill="#D22856"/>
+                </svg>
               </div>
               </a>
           </div>

@@ -23,7 +23,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 95px;
+    padding-top: 90px;
   }
 
   .advantages__text-more {
@@ -100,7 +100,7 @@
     border-top: 0 solid transparent;
     border-left: 1200px solid @white-color;
     border-bottom: 90px solid transparent;
-    top: 382px;
+    top: 378px;
     z-index: 10;
   }
 }
@@ -161,12 +161,18 @@
   }
 }
 
+.item-title__br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .advantages__item {
   margin: 0 auto;
 
   @media (min-width: @desktop-width) {
     width: auto;
-    padding-top: 250px;
+    padding-top: 247px;
   }
 }
 
@@ -211,6 +217,21 @@
   }
 }
 
+.item__mood::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 17px;
+    z-index: 50;
+    left: -30px;
+    top: 235px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+    opacity: 0.3;
+    filter: blur(4px);
+  }
+}
+
 .item__mood::after {
   @media (min-width: @desktop-width) {
     position: absolute;
@@ -219,8 +240,8 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 382px;
-    top: -50px;
-    left: 10px;
+    top: -55px;
+    left: 18px;
   }
 }
 
@@ -228,6 +249,21 @@
   @media (min-width: @desktop-width) {
     position: relative;
     z-index: 50;
+  }
+}
+
+.item__world::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 17px;
+    z-index: 50;
+    left: -10px;
+    top: 235px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+    opacity: 0.3;
+    filter: blur(4px);
   }
 }
 
@@ -239,7 +275,7 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 382px;
-    top: -50px;
+    top: -55px;
     left: 30px;
   }
 }
@@ -247,6 +283,21 @@
 .item__friends {
   position: relative;
   z-index: 50;
+}
+
+.item__friends::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 17px;
+    z-index: 50;
+    left: -20px;
+    top: 235px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+    opacity: 0.3;
+    filter: blur(4px);
+  }
 }
 
 .item__friends::after {
@@ -269,7 +320,7 @@
     background-image: url("../img/iphone-friends-desktop.svg");
     width: 186px;
     height: 382px;
-    top: -50px;
+    top: -55px;
   }
 }
 

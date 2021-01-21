@@ -2,10 +2,11 @@
   position: relative;
   z-index: 90;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 19px 0;
+  padding: 19px 0 5px;
 
   @media (min-width: @tablet-width) {
-    padding: 21px 0;
+    padding: 25px 0 25px;
+    height: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,6 +25,10 @@
     background-color: rgba(0, 0, 0, 0.3);
     margin-top: -12px;
   }
+}
+
+.page-header .page-header--menu-close {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__image {
