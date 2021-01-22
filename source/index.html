@@ -161,7 +161,7 @@
         <div class="table__wrapper">
           <h1 class="visually-hidden">Таблица вариантов</h1>
           <div class="table__content slider">
-            <table class="table--mobile">
+            <table class="table-programm">
               <tr>
                 <th class="table-row__empty--cell"></th>
                 <th class="table-row">
@@ -181,36 +181,45 @@
                 <td class="table-row__text">Розовый фильтр</td>
                 <td class="table-row__text--yes">
                   <span class="text--yes"></span>
+                  <span class="text--mob">Розовый фильтр</span>
                 </td>
                 <td class="table-row__text--yes">
                   <span class="text--yes"></span>
+                  <span class="text--mob">Розовый фильтр</span>
                 </td>
                 <td class="table-row__text--yes">
                   <span class="text--yes"></span>
+                  <span class="text--mob">Розовый фильтр</span>
                 </td>
               </tr>
                 <tr class="table-row__info">
                   <td class="table-row__text">Смайлики</td>
                   <td class="table-row__text--no">
                     <span class="text--no"></span>
+                    <span class="text--mob">Смайлики</span>
                   </td>
                   <td class="table-row__text--yes">
                     <span class="text--yes"></span>
+                    <span class="text--mob">Смайлики</span>
                   </td>
                   <td class="table-row__text--yes">
                     <span class="text--yes"></span>
+                    <span class="text--mob">Смайлики</span>
                   </td>
                 </tr>
                 <tr class="table-row__info">
                   <td class="table-row__text">Комментарии</td>
                   <td class="table-row__text--no">
                     <span class="text--no"></span>
+                    <span class="text--mob">Комментарии</span>
                   </td>
                   <td class="table-row__text--no">
                     <span class="text--no"></span>
+                    <span class="text--mob">Комментарии</span>
                   </td>
                   <td class="table-row__text--yes">
                     <span class="text--yes"></span>
+                    <span class="text--mob">Комментарии</span>
                   </td>
                 </tr>
             </table>
@@ -318,6 +327,8 @@
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__button');
+    var wrap = document.querySelector('.table-programm');
+    var buttons = document.querySelectorAll('.table__toggles .slider__toggle');
 
     navMain.classList.remove('main-nav--nojs');
 
@@ -330,5 +341,17 @@
         navMain.classList.remove('main-nav--opened');
       }
     });
+
+      buttonsCount = buttons.length
+      offset = 100 / buttonsCount;
+
+      for (i = 0; i < buttonsCount; i++) {
+        buttons[i].dataset.count = i;
+        buttons[i].addEventListener('click', ({ target }) => {
+        const left = target.dataset.count * offset ;
+        wrap.style.left = 'calc(' + -left + '% + 22px)';;
+        console.log(left);
+        });
+    }
   </script>
 </html>
