@@ -1,7 +1,9 @@
 .form-radio__wrapper {
   margin-top: 40px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0 20px 20px;
   background-color: @grey-color;
-  height: 340px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -19,11 +21,19 @@
 .form-radio__fieldset {
   @media (min-width: @tablet-width) {
     order: 2;
+    margin-top: -30px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -17px;
+    padding-bottom: 50px;
   }
 
   .form-radio__title {
     width: 280px;
     padding-top: 40px;
+    padding-bottom: 12px;
     font-family: @font-family, "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -36,10 +46,24 @@
       padding-left: 20px;
       padding-right: 20px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 10px;
+    }
   }
 
   .form-radio__item {
-    padding: 20px 0;
+    @media (min-width: @mobile-width) {
+      padding: 0 0 23px 10px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 15px 0 5px 62px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 0 12px 80px;
+    }
   }
 
   label {
@@ -50,9 +74,71 @@
   }
 }
 
+.form-radio__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  @media (min-width: @mobile-width) {
+    padding-left: 60px;
+  }
+}
+
+.form-radio__input + label::before {
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: 0;
+  background: @white-color;
+  border: 2px solid @light-grey;
+  border-radius: 50%;
+  transition: 0.3s ease;
+
+  @media (min-width: @mobile-width) {
+    top: -2px;
+    left: -10px;
+  }
+}
+
+.form-radio__input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: @active;
+  border-radius: 50%;
+  transition: 0.3s ease;
+
+  @media (min-width: @mobile-width) {
+    top: 11px;
+    left: 3px;
+  }
+}
+
+.form-radio__input {
+  position: relative;
+  top: 25px;
+}
+
 .form-radio__list {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0 55px;
+  padding: 0;
+  margin: 0;
+}
+
+.form-radio__input:checked:hover,
+.form-radio__label:hover::before {
+  border: 2px solid @base-color;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.form-radio__input:checked:active,
+.form-radio__label:active::before {
+  border: 2px solid @active;
+  border-radius: 50%;
+  transition: 0.3s ease;
 }

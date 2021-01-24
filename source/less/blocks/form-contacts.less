@@ -4,10 +4,12 @@
 
   @media (min-width: @tablet-width) {
     order: 3;
+    margin-top: -20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 936px;
+    margin-top: -60px;
   }
 }
 
@@ -15,12 +17,13 @@
   padding-top: 8px;
 
   @media (min-width: @tablet-width) {
-    padding: 40px 35px;
+    padding: 10px 55px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10px 60px;
   }
 
   label {
@@ -34,21 +37,25 @@
     @media (min-width: @tablet-width) {
       padding-top: 15px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 8px;
+    }
   }
 
   input {
-    width: 276px;
+    width: 258px;
     height: 59px;
     padding-left: 20px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid @light-grey;
     border-radius: 1px;
 
     @media (min-width: @tablet-width) {
-      width: 496px;
+      width: 437px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 371px;
+      width: 347px;
     }
   }
 
@@ -88,7 +95,60 @@
   }
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
   }
 }
+
+.form-contacts__item::before {
+  content: "";
+  position: absolute;
+  width: 63px;
+  height: 65px;
+  background-image: url("../img/phone-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @light-grey;
+
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+}
+
+.form-contacts__item--email::before {
+  content: "";
+  position: absolute;
+  width: 63px;
+  height: 65px;
+  background-image: url("../img/mail-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @light-grey;
+
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+}
+
+// .form__text-input+label {
+//   &:hover {
+//     border: 2px solid @base-color;
+//   }
+
+//   &:active {
+
+//   }
+// }

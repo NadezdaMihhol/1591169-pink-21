@@ -110,6 +110,18 @@
 .header-block__slogan--form {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 940px;
+    padding: 0 100px;
+  }
 }
 
 .header-block__title {
@@ -154,23 +166,22 @@
   text-align: center;
 
   @media (min-width: @mobile-width) {
-    padding-top: 30px;
     padding-bottom: 40px;
     line-height: 33px;
   }
 
   @media (min-width: @tablet-width) {
     width: 475px;
-    padding-top: 145px;
-    padding-bottom: 74px;
+    padding-top: 165px;
+    margin-bottom: 20px;
     font-size: 50px;
     line-height: 68px;
   }
 
   @media (min-width: @desktop-width) {
     width: 747px;
-    padding-top: 164px;
-    padding-bottom: 104px;
+    padding-top: 60px;
+    padding-bottom: 91px;
     font-size: 50px;
     line-height: 68px;
   }
