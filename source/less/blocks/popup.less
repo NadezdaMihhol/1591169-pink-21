@@ -1,0 +1,186 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 200;
+}
+
+.popup-failure__popup {
+  left: 0;
+  margin: auto;
+  bottom: auto;
+  font-family: @font-family, "Arial", sans-serif;
+  color: #000000;
+  background: @white-color;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media (min-width: @mobile-width) {
+    width: 320px;
+    top: 1170px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 875px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.popup-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+
+  @media (min-width: @mobile-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 38px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 49px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.popup-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: @base-color;
+
+  @media (min-width: @mobile-width) {
+    font-size: 14px;
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 360px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+}
+
+.popup-btn__wrapper {
+  @media (min-width: @mobile-width) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 80px;
+  }
+}
+
+.failure-btn {
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @grey-color;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.failure-button {
+  width: 276px;
+}
+
+.popup-succes__popup {
+  font-family: @font-family, "Arial", sans-serif;
+  color: #000000;
+  background: @white-color;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media (min-width: @mobile-width) {
+    top: 1600px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    top: 1500px;
+    left: 0;
+    margin: auto;
+    bottom: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.succes-text {
+  @media (min-width: @mobile-width) {
+    width: 250px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-bottom: 40px;
+  }
+}
+
+.succes-btn {
+  background: @grey-color;
+  border-radius: 0 0 5px 5px;
+
+  @media (min-width: @mobile-width) {
+    padding: 55px 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 150px;
+  }
+}
+
+.succes-button {
+  @media (min-width: @tablet-width) {
+    width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 456px;
+    border-radius: 1px;
+  }
+}
+
+.popup-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
+}

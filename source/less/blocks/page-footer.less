@@ -19,8 +19,16 @@
 }
 
 .page-footer--form {
+  @media (min-width: @mobile-width) {
+    margin-top: -52px;
+  }
+
   @media (min-width: @tablet-width) {
-    margin-top: 50px;
+    margin-top: -25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -35px;
   }
 }
 
