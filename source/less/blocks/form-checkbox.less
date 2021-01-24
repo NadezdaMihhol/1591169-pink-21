@@ -106,10 +106,6 @@
     top: 3px;
     left: 16px;
   }
-
-  &:hover {
-    border: 2px solid @base-color;
-  }
 }
 
 .form-input__checkbox + label::before {
@@ -205,6 +201,11 @@
 
 .form-input__checkbox:checked:active,
 .form-label__checkbox:active::before {
+  border: 2px solid @active;
+  transition: 0.3s ease;
+}
+
+.form-input__checkbox:focus + label::before {
   border: 2px solid @active;
   transition: 0.3s ease;
 }

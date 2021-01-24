@@ -41,8 +41,8 @@
         </button>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link main-nav__link--active" href="index.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">
+            <a class="main-nav__link main-nav__item--active">
               Конкурс
             </a>
           </li>
@@ -84,15 +84,15 @@
               <legend class="form__title visually-hidden">ФИО</legend>
               <div class="form__text-item">
                 <label class="form__text-label" for="username">Фамилия:</label>
-                <input class="form__text-input" type="text" id="username" placeholder="Укажите фамилию *">
+                <input class="form__text-input" type="text" id="username" required placeholder="Укажите фамилию *">
               </div>
               <div class="form__text-item">
                 <label class="form__text-label" for="name">Имя:</label>
-                <input class="form__text-input form__text-input--name" type="text" id="name" placeholder="Введите ваше имя *">
+                <input class="form__text-input form__text-input--name" type="text" id="name" required placeholder="Введите ваше имя *">
               </div>
               <div class="form__text-item">
                 <label class="form__text-label" for="middle-name">Отчество:</label>
-                <input class="form__text-input" type="text" id="middle-name" placeholder="Ну и отчество тоже *">
+                <input class="form__text-input" type="text" id="middle-name" required placeholder="Ну и отчество тоже *">
               </div>
             </fieldset>
           </div>
@@ -132,11 +132,11 @@
               <legend class="form-contacts__title">Контактная информация</legend>
               <div class="form-contacts__item">
                 <label class="form-contacts__label" for="tel">Номер телефона</label>
-                <input class="form-contacts__input" type="tel" name="telephone" id="tel" placeholder="Номер, пожалуйста">
+                <input class="form-contacts__input" type="tel" name="telephone" id="tel" required placeholder="Номер, пожалуйста">
               </div>
               <div class="form-contacts__item form-contacts__item--email">
                 <label class="form-contacts__label" for="e-mail">Адрес почты</label>
-                <input class="form-contacts__input" type="email" name="e-mail" id="e-mail" placeholder="Введите почту *">
+                <input class="form-contacts__input" type="email" name="e-mail" id="e-mail" required placeholder="Введите почту *">
               </div>
             </fieldset>
           </div>
