@@ -33,8 +33,12 @@
 }
 
 .catalog-footer {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @mobile-width) {
     margin-top: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -75px;
   }
 
   @media (min-width: @desktop-width) {

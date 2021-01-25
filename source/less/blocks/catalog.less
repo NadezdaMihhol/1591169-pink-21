@@ -31,18 +31,23 @@
   color: @base-color;
 
   @media (min-width: @mobile-width) {
-    padding-top: 54px;
+    padding-top: 35px;
     font-size: 14px;
   }
 
   @media (min-width: @tablet-width) {
     width: 490px;
-    padding-top: 100px;
+    padding-top: 90px;
     font-size: 18px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 672px;
     font-size: 18px;
+    padding-top: 90px;
   }
 }
