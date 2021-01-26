@@ -2,7 +2,11 @@
   position: relative;
   z-index: 90;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 19px 0 5px;
+
+  @media (min-width: @mobile-width) {
+    padding: 19px 0 5px;
+    height: 50px;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 25px 0 25px;
